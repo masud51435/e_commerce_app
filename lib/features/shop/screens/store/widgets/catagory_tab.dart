@@ -1,6 +1,7 @@
 import 'package:e_commerce_app/common/widgets/layout/grid_layout.dart';
 import 'package:e_commerce_app/common/widgets/text/section_heading/section_heading.dart';
 import 'package:e_commerce_app/features/shop/all_product/all_product.dart';
+import 'package:e_commerce_app/features/shop/controllers/product_controller%20.dart';
 import 'package:e_commerce_app/features/shop/models/product_model.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -18,7 +19,7 @@ class AppCategoryTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // final height = AppDeviceUtils.getScreenHeight();
-
+    final controller = ProductController.instance;
     return ListView(
       shrinkWrap: true,
       physics: const NeverScrollableScrollPhysics(),
@@ -61,10 +62,10 @@ class AppCategoryTab extends StatelessWidget {
               ),
               AppGridLayout(
                 //  height: height * 0.33,
-                itemCount: 6,
+                itemCount: controller.featureProducts.length,
                 itemBuilder: (BuildContext context, int index) =>
                     AppVerticalProductCard(
-                  product: ProductModel.empty(),
+                  product: controller.featureProducts[index],
                 ),
               ),
             ],
