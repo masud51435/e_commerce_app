@@ -11,6 +11,7 @@ import '../../../../common/widgets/commonbtn/commonbutton.dart';
 import '../../../../common/widgets/readmore/app_readmore_text.dart';
 import '../../../../common/widgets/text/section_heading/section_heading.dart';
 
+import '../checkOut/check_out.dart';
 import 'widgets/app_product_image_slide.dart';
 import 'widgets/product_attibrute.dart';
 import 'widgets/product_rating_share.dart';
@@ -41,7 +42,11 @@ class ProductDetail extends StatelessWidget {
                   const ProductRatingAndShare(),
                   const ProductMetaData(),
                   const ProductAttribute(),
-                  CommonBtn(onPress: () {}, title: 'CheckOut'),
+                  CommonBtn(
+                      onPress: () => Get.to(
+                            () => const CheckOutScreen(),
+                          ),
+                      title: 'CheckOut'),
                   const SizedBox(height: AppSizes.spaceBtwSection),
                   const AppSectionHeading(text: 'Description'),
                   const SizedBox(height: AppSizes.spaceBtwItem),

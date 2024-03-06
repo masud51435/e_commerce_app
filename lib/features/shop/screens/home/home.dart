@@ -117,7 +117,6 @@ class _HomeScreenState extends State<HomeScreen> {
                         );
                       }
                       return AppGridLayout(
-                        height: 300,
                         itemCount: controller.featureProducts.length,
                         itemBuilder: (BuildContext context, int index) =>
                             AppVerticalProductCard(

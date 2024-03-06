@@ -25,7 +25,7 @@ class ProductRepository extends GetxController {
           .where('IsFeatured', isEqualTo: true)
           .limit(4)
           .get();
-      print(snapshot);
+      
       return snapshot.docs
           .map((document) => ProductModel.fromSnapShot(document))
           .toList();
@@ -36,7 +36,6 @@ class ProductRepository extends GetxController {
     } on PlatformException catch (e) {
       throw AppPlatformException(e.code).message;
     } catch (e) {
-      print(e.toString());
       throw 'Some thing went wrong, please try again ${e.toString()}';
     }
   }
