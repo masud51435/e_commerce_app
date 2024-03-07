@@ -31,9 +31,9 @@ class homeAppBar extends StatelessWidget {
           Obx(
             () {
               if (controller.profileLoading.value) {
-                return const AppShimmerLoader(
+                return AppShimmerLoader(
                   height: 15,
-                  width: 18,
+                  width: Get.width * 0.3,
                 );
               } else {
                 return Text(
