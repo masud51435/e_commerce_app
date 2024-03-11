@@ -84,6 +84,32 @@ class UserController extends GetxController {
     }
   }
 
+  // LogOut account popup
+  void logOutAccountPopUp() {
+    Get.defaultDialog(
+      contentPadding: const EdgeInsets.all(AppSizes.md),
+      title: 'LogOut Now',
+      middleText: 'Are you sure you want to logOut from your account now?',
+      confirm: ElevatedButton(
+        onPressed: () async => AuthenticationRepository.instance.logOut(),
+        style: ElevatedButton.styleFrom(
+          backgroundColor: Colors.red,
+          side: const BorderSide(
+            color: Colors.red,
+          ),
+        ),
+        child: const Padding(
+          padding: EdgeInsets.symmetric(horizontal: AppSizes.lg),
+          child: Text('LogOut'),
+        ),
+      ),
+      cancel: OutlinedButton(
+        onPressed: () => Get.back(),
+        child: const Text('Cancel'),
+      ),
+    );
+  }
+
   // Delete account popup
   void deleteAccountPopUp() {
     Get.defaultDialog(

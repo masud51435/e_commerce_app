@@ -2,6 +2,7 @@ import 'package:e_commerce_app/common/widgets/custom_shape/container/primary_hea
 
 import 'package:e_commerce_app/common/widgets/text/section_heading/section_heading.dart';
 import 'package:e_commerce_app/data/repositories/upload_data/upload_all_data.dart';
+import 'package:e_commerce_app/features/personalization/controllers/user_data_controller.dart';
 import 'package:e_commerce_app/features/personalization/screens/address/address.dart';
 import 'package:e_commerce_app/features/personalization/screens/settings/widgets/SettingMenuTile.dart';
 import 'package:e_commerce_app/features/shop/screens/cart/cart.dart';
@@ -139,7 +140,7 @@ class SettingScreen extends StatelessWidget {
                     width: width,
                     child: OutlinedButton(
                       onPressed: () =>
-                          AuthenticationRepository.instance.logOut(),
+                          UserController.instance.logOutAccountPopUp(),
                       child: const Text('LogOut'),
                     ),
                   ),
