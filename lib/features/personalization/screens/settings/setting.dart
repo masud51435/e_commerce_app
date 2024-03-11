@@ -13,7 +13,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
-import '../../../../data/repositories/authentication/authentication_repo.dart';
 import '../../../../utils/device/device_utlities.dart';
 
 import 'widgets/settingAppbar.dart';
