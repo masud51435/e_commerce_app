@@ -28,7 +28,7 @@ class ProductController extends GetxController {
 
       //assign product into featureProducts
       featureProducts.assignAll(products);
-      print(featureProducts);
+      //print(featureProducts);
     } catch (e) {
       AppLoaders.errorSnackBar(title: 'Oh Snap!', message: e.toString());
     } finally {

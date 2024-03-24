@@ -9,12 +9,14 @@ import '../../../../../utils/constants/image_string.dart';
 import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/device/device_utlities.dart';
 import '../../../../../utils/helpers/helper_functions.dart';
+import '../../../models/product_model.dart';
 
 class AppProductImageSlide extends StatelessWidget {
   const AppProductImageSlide({
-    super.key,
+    super.key, required this.product,
   });
-  
+
+  final ProductModel product;
 
   @override
   Widget build(BuildContext context) {
@@ -68,7 +70,7 @@ class AppProductImageSlide extends StatelessWidget {
                   itemCount: 4,
                   itemBuilder: (BuildContext context, int index) =>
                       AppRoundedImage(
-                        onPress: (){},
+                    onPress: () {},
                     width: width * 0.19,
                     border: Border.all(color: AppColor.primaryColor),
                     backgroundColor: dark ? AppColor.dark : AppColor.white,

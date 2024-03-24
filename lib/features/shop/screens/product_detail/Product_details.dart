@@ -28,7 +28,9 @@ class ProductDetail extends StatelessWidget {
         scrollDirection: Axis.vertical,
         child: Column(
           children: [
-            const AppProductImageSlide(),
+            AppProductImageSlide(
+              product: product,
+            ),
             Padding(
               padding: const EdgeInsets.only(
                 left: AppSizes.defaultSpace,
