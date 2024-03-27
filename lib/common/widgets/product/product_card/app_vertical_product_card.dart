@@ -1,6 +1,6 @@
 import 'package:e_commerce_app/common/widgets/app_banner_rounded_image/banner_rounded_image.dart';
 import 'package:e_commerce_app/common/widgets/custom_shape/container/rounded_container.dart';
-import 'package:e_commerce_app/features/shop/controllers/product_controller%20.dart';
+import 'package:e_commerce_app/features/shop/controllers/product/product_controller%20.dart';
 
 import 'package:e_commerce_app/features/shop/models/product_model.dart';
 import 'package:e_commerce_app/features/shop/screens/product_detail/Product_details.dart';

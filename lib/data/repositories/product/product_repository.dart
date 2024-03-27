@@ -58,7 +58,7 @@ class ProductRepository extends GetxController {
         final url = await storage.uploadImageData(
             'Products/TImages', thumbnail, product.thumbnail);
 
-        //assign attibute to product thumbnail
+        //assign attribute to product thumbnail
         product.thumbnail = url;
 
         //product list of image

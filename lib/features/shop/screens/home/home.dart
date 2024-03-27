@@ -2,8 +2,7 @@ import 'package:e_commerce_app/common/widgets/product/product_card/app_vertical_
 import 'package:e_commerce_app/common/widgets/search_bar/app_search_bar.dart';
 import 'package:e_commerce_app/common/widgets/simmer/app_vertical_shimmer.dart';
 import 'package:e_commerce_app/features/shop/all_product/all_product.dart';
-import 'package:e_commerce_app/features/shop/controllers/product_controller%20.dart';
-
+import 'package:e_commerce_app/features/shop/controllers/product/product_controller%20.dart';
 import 'package:e_commerce_app/utils/constants/colors.dart';
 import 'package:e_commerce_app/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';

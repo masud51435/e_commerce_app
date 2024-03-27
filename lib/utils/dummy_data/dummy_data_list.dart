@@ -95,8 +95,8 @@ class AppDummyData {
       images: [
         AppImages.productImage1,
         AppImages.productImage23,
-        AppImages.productImage21,
-        AppImages.productImage9
+        AppImages.productImage22,
+        AppImages.productImage8
       ],
       salePrice: 30,
       sku: 'ABD4350',
@@ -138,7 +138,7 @@ class AppDummyData {
           stack: 126,
           price: 134,
           salePrice: 122.6,
-          image: AppImages.productImage9,
+          image: AppImages.productImage10,
           description: 'This is the product description for nike sports shoes',
           attributeValue: {'Color': 'Blue', 'Size': 'EU 34'},
         ),
@@ -446,7 +446,7 @@ class AppDummyData {
           productCount: 140,
           isFeatured: true),
       images: [
-        AppImages.productImage24,
+        AppImages.productImage25,
         AppImages.productImage24,
         AppImages.productImage26,
         AppImages.productImage27
