@@ -80,7 +80,7 @@ class AppDummyData {
     ProductModel(
       id: '001',
       stock: 15,
-      price: 146,
+      price: 299,
       isFeatured: true,
       title: 'Green Nike Sports Shoes',
       description: 'Green Nike Sports Shoes',
@@ -98,7 +98,7 @@ class AppDummyData {
         AppImages.productImageitem1,
         AppImages.productImageitem2,
       ],
-      salePrice: 30,
+      salePrice: 179,
       sku: 'ABD4350',
       categoryId: '1',
       productAttributes: [
@@ -110,8 +110,8 @@ class AppDummyData {
         ProductVariationModel(
           id: '1',
           stack: 34,
-          price: 134,
-          salePrice: 122.6,
+          price: 299,
+          salePrice: 179,
           image: AppImages.productImage1,
           description: 'This is the product description for nike sports shoes',
           attributeValue: {'Color': 'Green', 'Size': 'EU 34'},
@@ -119,8 +119,8 @@ class AppDummyData {
         ProductVariationModel(
           id: '2',
           stack: 24,
-          price: 134,
-          salePrice: 122.6,
+          price: 250,
+          salePrice: 187.8,
           image: AppImages.productImageitem1,
           description: 'This is the product description for nike sports shoes',
           attributeValue: {'Color': 'Black', 'Size': 'EU 32'},
@@ -128,16 +128,16 @@ class AppDummyData {
         ProductVariationModel(
           id: '3',
           stack: 342,
-          price: 134,
-          salePrice: 122.6,
+          price: 345,
+          salePrice: 265,
           image: AppImages.productImageitem2,
           attributeValue: {'Color': 'Black', 'Size': 'EU 30'},
         ),
         ProductVariationModel(
           id: '4',
           stack: 126,
-          price: 134,
-          salePrice: 122.6,
+          price: 343,
+          salePrice: 317.6,
           image: AppImages.productImage23,
           description: 'This is the product description for nike sports shoes',
           attributeValue: {'Color': 'Blue', 'Size': 'EU 34'},
@@ -147,7 +147,7 @@ class AppDummyData {
     ProductModel(
       id: '002',
       stock: 50,
-      price: 30,
+      price: 87,
       isFeatured: false,
       title: 'Blue T-shirt for all ages',
       description:
@@ -204,7 +204,7 @@ class AppDummyData {
     ProductModel(
       id: '004',
       stock: 34,
-      price: 146,
+      price: 145,
       isFeatured: true,
       title: '4 color t-shirt dry fit',
       description:
@@ -217,12 +217,11 @@ class AppDummyData {
         name: 'Zara',
       ),
       images: [
-        AppImages.productImage60,
         AppImages.productImage61,
         AppImages.productImage62,
         AppImages.productImage63
       ],
-      salePrice: 30,
+      salePrice: 48,
       sku: 'ABD43550',
       categoryId: '16',
       productAttributes: [
@@ -234,8 +233,8 @@ class AppDummyData {
         ProductVariationModel(
           id: '1',
           stack: 34,
-          price: 134,
-          salePrice: 122.6,
+          price: 145,
+          salePrice: 48,
           image: AppImages.productImage61,
           description:
               'This is a product description for 4 color t-shirt, there we can added more thing ',
@@ -244,8 +243,8 @@ class AppDummyData {
         ProductVariationModel(
           id: '2',
           stack: 24,
-          price: 134,
-          salePrice: 122.6,
+          price: 99,
+          salePrice: 67.9,
           image: AppImages.productImage62,
           description:
               'This is a product description for 4 color t-shirt, there we can added more thing ',
@@ -254,16 +253,16 @@ class AppDummyData {
         ProductVariationModel(
           id: '3',
           stack: 342,
-          price: 134,
-          salePrice: 122.6,
+          price: 111,
+          salePrice: 67,
           image: AppImages.productImage63,
           attributeValue: {'Color': 'Black', 'Size': 'EU 30'},
         ),
         ProductVariationModel(
           id: '4',
           stack: 126,
-          price: 134,
-          salePrice: 122.6,
+          price: 78,
+          salePrice: 37.2,
           image: AppImages.productImage60,
           description: 'This is the product description for nike sports shoes',
           attributeValue: {'Color': 'Blue', 'Size': 'EU 34'},
@@ -273,7 +272,7 @@ class AppDummyData {
     ProductModel(
       id: '005',
       stock: 54,
-      price: 146,
+      price: 485,
       isFeatured: false,
       title: 'Nike Air Jordan Shoes',
       description:
@@ -290,7 +289,7 @@ class AppDummyData {
         AppImages.productImage8,
         AppImages.productImage9,
       ],
-      salePrice: 30,
+      salePrice: 300,
       sku: 'ABR43550',
       categoryId: '8',
       productAttributes: [
@@ -388,7 +387,7 @@ class AppDummyData {
         AppImages.productImage12,
         AppImages.productImage13,
       ],
-      salePrice: 20,
+      salePrice: 19,
       sku: 'ABH550',
       categoryId: '10',
       productAttributes: [
@@ -418,7 +417,7 @@ class AppDummyData {
         AppImages.productImage21,
         AppImages.productImage22,
       ],
-      salePrice: 300,
+      salePrice: 298,
       sku: 'ABH550',
       categoryId: '8',
       productAttributes: [
@@ -431,7 +430,7 @@ class AppDummyData {
     ProductModel(
       id: '010',
       stock: 15,
-      price: 45,
+      price: 159,
       isFeatured: true,
       title: 'Track Suit',
       description:
@@ -449,7 +448,7 @@ class AppDummyData {
         AppImages.productImage26,
         AppImages.productImage27
       ],
-      salePrice: 40,
+      salePrice: 96,
       sku: 'ABD4350',
       categoryId: '16',
       productAttributes: [
@@ -460,8 +459,8 @@ class AppDummyData {
         ProductVariationModel(
           id: '1',
           stack: 34,
-          price: 134,
-          salePrice: 122.6,
+          price: 159,
+          salePrice: 96,
           image: AppImages.productImage24,
           description: 'This is the product description for track suit',
           attributeValue: {'Color': 'Green', 'Size': 'EU 34'},
@@ -469,8 +468,8 @@ class AppDummyData {
         ProductVariationModel(
           id: '2',
           stack: 24,
-          price: 134,
-          salePrice: 122.6,
+          price: 143,
+          salePrice: 110.2,
           image: AppImages.productImage25,
           description: 'This is the product description track suit',
           attributeValue: {'Color': 'Black', 'Size': 'EU 32'},
@@ -478,16 +477,16 @@ class AppDummyData {
         ProductVariationModel(
           id: '3',
           stack: 342,
-          price: 134,
-          salePrice: 122.6,
+          price: 97,
+          salePrice: 89,
           image: AppImages.productImage26,
           attributeValue: {'Color': 'Black', 'Size': 'EU 30'},
         ),
         ProductVariationModel(
           id: '4',
           stack: 126,
-          price: 134,
-          salePrice: 122.6,
+          price: 99,
+          salePrice: 59.7,
           image: AppImages.productImage27,
           description: 'This is the product description for nike sports shoes',
           attributeValue: {'Color': 'Blue', 'Size': 'EU 34'},
@@ -528,7 +527,7 @@ class AppDummyData {
     ProductModel(
       id: '012',
       stock: 15,
-      price: 450,
+      price: 499,
       isFeatured: true,
       title: 'Air jordan black shoes',
       description:
@@ -546,7 +545,7 @@ class AppDummyData {
         AppImages.productImage8,
         AppImages.productImage9,
       ],
-      salePrice: 400,
+      salePrice: 378,
       sku: 'ABD4350',
       categoryId: '1',
       productAttributes: [
@@ -557,8 +556,8 @@ class AppDummyData {
         ProductVariationModel(
           id: '1',
           stack: 34,
-          price: 134,
-          salePrice: 122.6,
+          price: 499,
+          salePrice: 378,
           image: AppImages.productImage7,
           description: 'This is the product description for track suit',
           attributeValue: {'Color': 'Green', 'Size': 'EU 34'},
@@ -566,8 +565,8 @@ class AppDummyData {
         ProductVariationModel(
           id: '2',
           stack: 24,
-          price: 134,
-          salePrice: 122.6,
+          price: 376,
+          salePrice: 299.5,
           image: AppImages.productImage8,
           description: 'This is the product description track suit',
           attributeValue: {'Color': 'Black', 'Size': 'EU 32'},
@@ -575,8 +574,8 @@ class AppDummyData {
         ProductVariationModel(
           id: '3',
           stack: 342,
-          price: 134,
-          salePrice: 122.6,
+          price: 389,
+          salePrice: 325.9,
           image: AppImages.productImage9,
           attributeValue: {'Color': 'Black', 'Size': 'EU 30'},
         ),
@@ -608,12 +607,11 @@ class AppDummyData {
           productCount: 140,
           isFeatured: true),
       images: [
-        AppImages.productImage47,
         AppImages.productImage48,
         AppImages.productImage49,
         AppImages.productImage50,
       ],
-      salePrice: 400,
+      salePrice: 398,
       sku: 'ABD4350',
       categoryId: '3',
       productAttributes: [
@@ -624,8 +622,8 @@ class AppDummyData {
         ProductVariationModel(
           id: '1',
           stack: 34,
-          price: 134,
-          salePrice: 122.6,
+          price: 450,
+          salePrice: 398,
           image: AppImages.productImage47,
           description: 'This is the product description for track suit',
           attributeValue: {'Color': 'Green', 'Size': 'EU 34'},
@@ -633,8 +631,8 @@ class AppDummyData {
         ProductVariationModel(
           id: '2',
           stack: 24,
-          price: 134,
-          salePrice: 122.6,
+          price: 659,
+          salePrice: 599.0,
           image: AppImages.productImage48,
           description: 'This is the product description track suit',
           attributeValue: {'Color': 'Black', 'Size': 'EU 32'},
@@ -642,16 +640,16 @@ class AppDummyData {
         ProductVariationModel(
           id: '3',
           stack: 342,
-          price: 134,
-          salePrice: 122.6,
+          price: 578,
+          salePrice: 529.0,
           image: AppImages.productImage49,
           attributeValue: {'Color': 'Black', 'Size': 'EU 30'},
         ),
         ProductVariationModel(
           id: '4',
           stack: 126,
-          price: 134,
-          salePrice: 122.6,
+          price: 637,
+          salePrice: 599.5,
           image: AppImages.productImage50,
           description: 'This is the product description for nike sports shoes',
           attributeValue: {'Color': 'Blue', 'Size': 'EU 34'},

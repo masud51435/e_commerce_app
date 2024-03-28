@@ -42,7 +42,9 @@ class ProductDetail extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const ProductRatingAndShare(),
-                  const ProductMetaData(),
+                  ProductMetaData(
+                    product: product,
+                  ),
                   const ProductAttribute(),
                   CommonBtn(
                       onPress: () => Get.to(

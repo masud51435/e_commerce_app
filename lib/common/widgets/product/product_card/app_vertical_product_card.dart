@@ -135,7 +135,7 @@ class AppVerticalProductCard extends StatelessWidget {
                           ),
                         AppProductPrice(
                           price: controller.getProductPrice(product),
-                          isLarge: true,
+                          isLarge: false,
                         ),
                       ],
                     ),
