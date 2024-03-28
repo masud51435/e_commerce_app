@@ -131,6 +131,9 @@ class AppImages {
       "assets/images/products/iphone8_mobile_front.png";
   static const String productImage18 =
       "assets/images/products/tomi_dogfood.png";
+  static const String productImageitem1 = "assets/images/products/pngegg.png";
+  static const String productImageitem2 = "assets/images/products/pngegg1.png";
+  static const String productImageitem3 = "assets/images/products/pngegg2.png";
   static const String productImage19 = "assets/images/products/blueSoes.png";
   static const String productImage20 = "assets/images/products/redSohes.png";
   static const String productImage21 = "assets/images/products/NikeAirMax.png";
