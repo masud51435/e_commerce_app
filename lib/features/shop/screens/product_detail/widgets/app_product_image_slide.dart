@@ -58,16 +58,6 @@ class AppProductImageSlide extends StatelessWidget {
                 ),
               ),
             ),
-            CustomAppBar(
-              showBackArrow: true,
-              actions: [
-                AppCircularIcon(
-                  icon: Icons.favorite,
-                  color: Colors.red,
-                  onPress: () {},
-                ),
-              ],
-            ),
             Positioned(
               right: 0,
               bottom: AppSizes.spaceBtwSection,
@@ -89,8 +79,7 @@ class AppProductImageSlide extends StatelessWidget {
                           controller.selectProductImage.value == images[index];
                       return AppRoundedImage(
                         onPress: () =>
-                            controller.selectProductImage.value =
-                            images[index],
+                            controller.selectProductImage.value = images[index],
                         width: width * 0.19,
                         border: Border.all(
                           color: imageSelected
@@ -107,6 +96,16 @@ class AppProductImageSlide extends StatelessWidget {
                   ),
                 ),
               ),
+            ),
+            CustomAppBar(
+              showBackArrow: true,
+              actions: [
+                AppCircularIcon(
+                  icon: Icons.favorite,
+                  color: Colors.red,
+                  onPress: () {},
+                ),
+              ],
             ),
           ],
         ),

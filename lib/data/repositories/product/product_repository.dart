@@ -25,7 +25,7 @@ class ProductRepository extends GetxController {
           .where('IsFeatured', isEqualTo: true)
           .limit(4)
           .get();
-      
+
       return snapshot.docs
           .map((document) => ProductModel.fromSnapShot(document))
           .toList();
@@ -56,7 +56,7 @@ class ProductRepository extends GetxController {
 
         // upload image and get it url
         final url = await storage.uploadImageData(
-            'Products/TImages', thumbnail, product.thumbnail);
+            'Products/thumbnailimages', thumbnail, product.thumbnail);
 
         //assign attribute to product thumbnail
         product.thumbnail = url;
@@ -70,7 +70,7 @@ class ProductRepository extends GetxController {
 
             // upload image and get it url
             final url = await storage.uploadImageData(
-                'Products/Images', assetImage, image);
+                'Products/productimages', assetImage, image);
 
             //assign URL to product imageUrl
             imageUrl.add(url);
@@ -88,7 +88,7 @@ class ProductRepository extends GetxController {
 
             // upload image and get its url
             final url = await storage.uploadImageData(
-                'Products/VImages', assetImage, variation.image);
+                'Products/variationimages', assetImage, variation.image);
 
             // assign URL  to variation.image attributes
             variation.image = url;

@@ -1,4 +1,3 @@
-
 import 'package:e_commerce_app/features/shop/models/product_model.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
@@ -17,7 +16,6 @@ class AppSortableProduct extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    
     return Column(
       children: [
         DropdownButtonFormField(
@@ -41,7 +39,9 @@ class AppSortableProduct extends StatelessWidget {
         AppGridLayout(
           itemCount: 10,
           itemBuilder: (BuildContext context, int index) =>
-               AppVerticalProductCard(product: ProductModel.empty(),),
+              AppVerticalProductCard(
+            product: ProductModel.empty(),
+          ),
         ),
       ],
     );

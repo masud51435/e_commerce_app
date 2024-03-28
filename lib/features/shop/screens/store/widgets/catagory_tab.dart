@@ -2,7 +2,6 @@ import 'package:e_commerce_app/common/widgets/layout/grid_layout.dart';
 import 'package:e_commerce_app/common/widgets/text/section_heading/section_heading.dart';
 import 'package:e_commerce_app/features/shop/all_product/all_product.dart';
 import 'package:e_commerce_app/features/shop/controllers/product/product_controller%20.dart';
-import 'package:e_commerce_app/features/shop/models/product_model.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

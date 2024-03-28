@@ -28,12 +28,12 @@ class ImageController extends GetxController {
     }
 
     //get all image from the product variation if not null
-    if (product.productVariations != null ||
-        product.productVariations!.isNotEmpty) {
-      images.addAll(
-        product.productVariations!.map((variation) => variation.image),
-      );
-    }
+    // if (product.productVariations != null ||
+    //     product.productVariations!.isNotEmpty) {
+    //   images.addAll(
+    //     product.productVariations!.map((variation) => variation.image),
+    //   );
+    // }
     return images.toList();
   }
 
