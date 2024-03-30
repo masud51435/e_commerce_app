@@ -1,6 +1,7 @@
 import 'package:e_commerce_app/common/widgets/chip/ChoiceChip.dart';
 import 'package:e_commerce_app/common/widgets/text/product_title_text.dart';
 import 'package:e_commerce_app/common/widgets/text/section_heading/section_heading.dart';
+import 'package:e_commerce_app/features/shop/models/product_model.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../common/widgets/custom_shape/container/rounded_container.dart';
@@ -13,7 +14,9 @@ import '../../../../../utils/helpers/helper_functions.dart';
 class ProductAttribute extends StatelessWidget {
   const ProductAttribute({
     super.key,
+    required this.product,
   });
+  final ProductModel product;
 
   @override
   Widget build(BuildContext context) {
@@ -74,62 +77,31 @@ class ProductAttribute extends StatelessWidget {
         ),
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            const AppSectionHeading(text: 'Color'),
-            const SizedBox(
-              height: AppSizes.spaceBtwItem / 1.5,
-            ),
-            Wrap(
-              spacing: AppSizes.sm,
-              children: [
-                AppChoiceChip(
-                  text: 'Green',
-                  selected: true,
-                  onSelected: (value) {},
+          children: product.productAttributes!
+              .map(
+                (attribute) => Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    AppSectionHeading(text: attribute.name ?? ''),
+                    const SizedBox(
+                      height: AppSizes.spaceBtwItem / 1.5,
+                    ),
+                    Wrap(
+                      spacing: AppSizes.sm,
+                      children: attribute.values!
+                          .map(
+                            (value) => AppChoiceChip(
+                              text: value,
+                              selected: false,
+                              onSelected: (value) {},
+                            ),
+                          )
+                          .toList(),
+                    ),
+                  ],
                 ),
-                AppChoiceChip(
-                  text: 'Red',
-                  selected: false,
-                  onSelected: (value) {},
-                ),
-                AppChoiceChip(
-                  text: 'Blue',
-                  selected: false,
-                  onSelected: (value) {},
-                ),
-              ],
-            ),
-          ],
-        ),
-        const SizedBox(height: AppSizes.spaceBtwItem),
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            const AppSectionHeading(text: 'Size'),
-            const SizedBox(
-              height: AppSizes.spaceBtwItem / 1.5,
-            ),
-            Wrap(
-              spacing: AppSizes.sm,
-              children: [
-                AppChoiceChip(
-                  text: 'EU - 40',
-                  selected: true,
-                  onSelected: (value) {},
-                ),
-                AppChoiceChip(
-                  text: 'EU - 41',
-                  selected: false,
-                  onSelected: (value) {},
-                ),
-                AppChoiceChip(
-                  text: 'EU - 43',
-                  selected: false,
-                  onSelected: (value) {},
-                ),
-              ],
-            ),
-          ],
+              )
+              .toList(),
         ),
         const SizedBox(height: AppSizes.spaceBtwSection),
       ],

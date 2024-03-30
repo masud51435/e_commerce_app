@@ -10,7 +10,6 @@ import '../../../../../common/widgets/custom_shape/container/rounded_container.d
 import '../../../../../common/widgets/text/product_title_text.dart';
 import '../../../../../utils/constants/colors.dart';
 import '../../../../../utils/constants/enums.dart';
-import '../../../../../utils/constants/image_string.dart';
 import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/device/device_utlities.dart';
 import '../../../../../utils/helpers/helper_functions.dart';
@@ -52,26 +51,24 @@ class ProductMetaData extends StatelessWidget {
             const SizedBox(
               width: AppSizes.spaceBtwItem,
             ),
-            Flexible(
-              child: Row(
-                children: [
-                  if (product.productType == ProductType.single.toString() &&
-                      product.salePrice > 0)
-                    Padding(
-                      padding: const EdgeInsets.only(right: AppSizes.sm),
-                      child: Text(
-                        product.price.toString(),
-                        style: Theme.of(context).textTheme.labelMedium!.apply(
-                              decoration: TextDecoration.lineThrough,
-                            ),
-                      ),
+            Row(
+              children: [
+                if (product.productType == ProductType.single.toString() &&
+                    product.salePrice > 0)
+                  Padding(
+                    padding: const EdgeInsets.only(right: AppSizes.sm),
+                    child: Text(
+                      product.price.toString(),
+                      style: Theme.of(context).textTheme.labelMedium!.apply(
+                            decoration: TextDecoration.lineThrough,
+                          ),
                     ),
-                  AppProductPrice(
-                    price: controller.getProductPrice(product),
-                    isLarge: true,
                   ),
-                ],
-              ),
+                AppProductPrice(
+                  price: controller.getProductPrice(product),
+                  isLarge: true,
+                ),
+              ],
             ),
           ],
         ),

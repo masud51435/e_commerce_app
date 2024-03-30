@@ -2,6 +2,7 @@ import 'package:e_commerce_app/features/shop/models/product_model.dart';
 import 'package:e_commerce_app/features/shop/screens/product_detail/widgets/app_product_metadata.dart';
 import 'package:e_commerce_app/features/shop/screens/product_detail/widgets/product_bottom_appBar.dart';
 import 'package:e_commerce_app/features/shop/screens/product_review/Product_review.dart';
+import 'package:e_commerce_app/utils/constants/enums.dart';
 import 'package:e_commerce_app/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -45,7 +46,10 @@ class ProductDetail extends StatelessWidget {
                   ProductMetaData(
                     product: product,
                   ),
-                  const ProductAttribute(),
+                  if (product.productType == ProductType.variable.toString())
+                    ProductAttribute(
+                      product: product,
+                    ),
                   CommonBtn(
                       onPress: () => Get.to(
                             () => const CheckOutScreen(),
