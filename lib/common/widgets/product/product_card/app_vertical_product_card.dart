@@ -55,9 +55,11 @@ class AppVerticalProductCard extends StatelessWidget {
                       fit: BoxFit.cover,
                       isNetworkImage: true,
                       onPress: () {
-                        Get.to(() => ProductDetail(
-                              product: product,
-                            ));
+                        Get.to(
+                          () => ProductDetail(
+                            product: product,
+                          ),
+                        );
                       },
                     ),
                   ),

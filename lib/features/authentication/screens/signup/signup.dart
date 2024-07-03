@@ -16,32 +16,24 @@ class SignUpScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(),
       body: const SingleChildScrollView(
-        child: Padding(
-          padding: EdgeInsets.all(AppSizes.defaultSpace),
-          child: Column(
-            children: [
-              SignUpTitle(),
-              SizedBox(
-                height: AppSizes.spaceBtwSection,
-              ),
-              SignUpForm(),
-              LoginDivider(
-                dividerText: AppTexts.orSignUpWith,
-              ),
-              SizedBox(
-                height: AppSizes.defaultSpace,
-              ),
-              LoginSocialButton(),
-            ],
-          ),
+        padding: EdgeInsets.all(AppSizes.defaultSpace),
+        child: Column(
+          children: [
+            SignUpTitle(),
+            SizedBox(
+              height: AppSizes.spaceBtwSection,
+            ),
+            SignUpForm(),
+            LoginDivider(
+              dividerText: AppTexts.orSignUpWith,
+            ),
+            SizedBox(
+              height: AppSizes.defaultSpace,
+            ),
+            LoginSocialButton(),
+          ],
         ),
       ),
     );
   }
 }
-
-
-
-
-
-

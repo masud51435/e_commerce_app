@@ -51,10 +51,11 @@ class ProductDetail extends StatelessWidget {
                       product: product,
                     ),
                   CommonBtn(
-                      onPress: () => Get.to(
-                            () => const CheckOutScreen(),
-                          ),
-                      title: 'CheckOut'),
+                    onPress: () => Get.to(
+                      () => const CheckOutScreen(),
+                    ),
+                    title: 'CheckOut',
+                  ),
                   const SizedBox(height: AppSizes.spaceBtwSection),
                   const AppSectionHeading(text: 'Description'),
                   const SizedBox(height: AppSizes.spaceBtwItem),

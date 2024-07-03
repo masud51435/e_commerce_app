@@ -13,28 +13,26 @@ class LoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: SingleChildScrollView(
-        child: Padding(
-          padding: EdgeInsets.symmetric(
-            vertical: AppSizes.appBarHeight,
-            horizontal: AppSizes.defaultSpace,
-          ),
-          child: Column(
-            children: [
-              LoginHeader(),
-              SizedBox(
-                height: AppSizes.spaceBtwSection,
-              ),
-              //form
-              LoginForm(),
-              LoginDivider(
-                dividerText: AppTexts.orLogInWith,
-              ),
-              SizedBox(
-                height: AppSizes.defaultSpace,
-              ),
-              LoginSocialButton(),
-            ],
-          ),
+        padding: EdgeInsets.symmetric(
+          vertical: AppSizes.appBarHeight,
+          horizontal: AppSizes.defaultSpace,
+        ),
+        child: Column(
+          children: [
+            LoginHeader(),
+            SizedBox(
+              height: AppSizes.spaceBtwSection,
+            ),
+            //form
+            LoginForm(),
+            LoginDivider(
+              dividerText: AppTexts.orLogInWith,
+            ),
+            SizedBox(
+              height: AppSizes.defaultSpace,
+            ),
+            LoginSocialButton(),
+          ],
         ),
       ),
     );

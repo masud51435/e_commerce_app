@@ -30,53 +30,51 @@ class ForgetPassword extends StatelessWidget {
       ),
       body: Center(
         child: SingleChildScrollView(
-          child: Padding(
-            padding: const EdgeInsets.all(AppSizes.defaultSpace),
-            child: Form(
-              key: controller.formKey,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const Image(
-                    image: AssetImage(AppImages.forgotpass),
+          padding: const EdgeInsets.all(AppSizes.defaultSpace),
+          child: Form(
+            key: controller.formKey,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Image(
+                  image: AssetImage(AppImages.forgotpass),
+                ),
+                const SizedBox(
+                  height: AppSizes.spaceBtwSection,
+                ),
+                Text(
+                  AppTexts.forgetPasswordTitle,
+                  style: Theme.of(context).textTheme.headlineMedium,
+                  textAlign: TextAlign.center,
+                ),
+                const SizedBox(
+                  height: AppSizes.spaceBtwItem,
+                ),
+                Text(
+                  AppTexts.forgetPasswordSubTitle,
+                  style: Theme.of(context).textTheme.bodySmall,
+                ),
+                const SizedBox(
+                  height: AppSizes.spaceBtwSection,
+                ),
+                TextFormField(
+                  keyboardType: TextInputType.emailAddress,
+                  controller: controller.emailController,
+                  validator: (value) => AppValidator.validateEmail(value),
+                  decoration: const InputDecoration(
+                    prefixIcon: Icon(Icons.email),
+                    labelText: AppTexts.email,
                   ),
-                  const SizedBox(
-                    height: AppSizes.spaceBtwSection,
-                  ),
-                  Text(
-                    AppTexts.forgetPasswordTitle,
-                    style: Theme.of(context).textTheme.headlineMedium,
-                    textAlign: TextAlign.center,
-                  ),
-                  const SizedBox(
-                    height: AppSizes.spaceBtwItem,
-                  ),
-                  Text(
-                    AppTexts.forgetPasswordSubTitle,
-                    style: Theme.of(context).textTheme.bodySmall,
-                  ),
-                  const SizedBox(
-                    height: AppSizes.spaceBtwSection,
-                  ),
-                  TextFormField(
-                    keyboardType: TextInputType.emailAddress,
-                    controller: controller.emailController,
-                    validator: (value) => AppValidator.validateEmail(value),
-                    decoration: const InputDecoration(
-                      prefixIcon: Icon(Icons.email),
-                      labelText: AppTexts.email,
-                    ),
-                  ),
-                  const SizedBox(
-                    height: AppSizes.spaceBtwSection,
-                  ),
-                  CommonBtn(
-                    onPress: () => controller.sendMail(),
-                    title: AppTexts.submit,
-                  ),
-                ],
-              ),
+                ),
+                const SizedBox(
+                  height: AppSizes.spaceBtwSection,
+                ),
+                CommonBtn(
+                  onPress: () => controller.sendMail(),
+                  title: AppTexts.submit,
+                ),
+              ],
             ),
           ),
         ),
