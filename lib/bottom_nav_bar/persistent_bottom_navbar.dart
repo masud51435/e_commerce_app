@@ -1,7 +1,8 @@
 import 'package:e_commerce_app/features/shop/screens/home/home.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
+import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
+
 
 class PbottomNavbar extends StatefulWidget {
   const PbottomNavbar({super.key});
@@ -68,7 +69,7 @@ class _PbottomNavbarState extends State<PbottomNavbar> {
       navBarStyle: NavBarStyle.style9,
       navBarHeight: 55,
       backgroundColor: const Color.fromARGB(255, 58, 64, 84),
-      padding: const NavBarPadding.all(10),
+      padding:  const EdgeInsets.all(10),
       margin: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
       bottomScreenMargin: 0,
       decoration: NavBarDecoration(

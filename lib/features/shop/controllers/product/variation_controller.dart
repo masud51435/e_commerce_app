@@ -24,20 +24,20 @@ class VariationController extends GetxController {
   }
 
   // check if selected attributes matches any variation attributes
-  bool _isSelectedAttributeValue(Map<String, dynamic> variationAttributes,
-      Map<String, dynamic> selectedAttributes) {
-    //if selectedAttributes contains 3 attributes and current variation contains 2 then return
-    if (variationAttributes.length != selectedAttributes.length) return false;
-    // if any of the attributes is different than returns.e.g. [Green , Large] * [Green, Small]
-    for (final key in variationAttributes.keys) {
-      //attribute[key] = Value which could be [Green, Small, Cotton]
-      if (variationAttributes[key] != selectedAttributes[key]) return false;
-    }
-  }
+  // bool _isSelectedAttributeValue(Map<String, dynamic> variationAttributes,
+  //     Map<String, dynamic> selectedAttributes) {
+  //   //if selectedAttributes contains 3 attributes and current variation contains 2 then return
+  //   if (variationAttributes.length != selectedAttributes.length) return false;
+  //   // if any of the attributes is different than returns.e.g. [Green , Large] * [Green, Small]
+  //   for (final key in variationAttributes.keys) {
+  //     //attribute[key] = Value which could be [Green, Small, Cotton]
+  //     if (variationAttributes[key] != selectedAttributes[key]) return false;
+  //   }
+  // }
 
   //check attribute stock in variation
-  Set<String?> getAttributeAvailablityInVariation(
-      List<ProductVariationModel> variations, String attributeName) {}
+  // Set<String?> getAttributeAvailablityInVariation(
+  //     List<ProductVariationModel> variations, String attributeName) {}
 
   // check product variation stock status
   void getProductVariationStockStatus() {

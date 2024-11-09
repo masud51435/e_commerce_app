@@ -16,16 +16,13 @@ class TermsCondition extends StatelessWidget {
     final dark = AppHelperFunctions.isDarkMode(context);
     return Row(
       children: [
-        Expanded(
-          flex: 1,
-          child: SizedBox(
-            height: 24,
-            width: 24,
-            child: Obx(
-              () => Checkbox(
-                value: controller.privacyController.value,
-                onChanged: (value) => controller.setPrivacyController(),
-              ),
+        SizedBox(
+          height: 24,
+          width: 24,
+          child: Obx(
+            () => Checkbox(
+              value: controller.privacyController.value,
+              onChanged: (value) => controller.setPrivacyController(),
             ),
           ),
         ),
@@ -33,7 +30,6 @@ class TermsCondition extends StatelessWidget {
           width: AppSizes.sm,
         ),
         Expanded(
-          flex: 11,
           child: Text.rich(
             TextSpan(
               children: [
@@ -61,8 +57,6 @@ class TermsCondition extends StatelessWidget {
                 ),
               ],
             ),
-            overflow: TextOverflow.ellipsis,
-            maxLines: 2,
           ),
         ),
       ],

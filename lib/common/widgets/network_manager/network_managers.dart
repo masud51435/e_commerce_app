@@ -1,5 +1,4 @@
 import 'dart:async';
-
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:e_commerce_app/common/widgets/loaders/loaders.dart';
 import 'package:flutter/services.dart';
@@ -9,7 +8,7 @@ class NetworkManager extends GetxController {
   static NetworkManager get instance => Get.find();
 
   final Connectivity _connectivity = Connectivity();
-  late StreamSubscription<ConnectivityResult> _connectivitySubscription;
+  late StreamSubscription<List<ConnectivityResult>> _connectivitySubscription;
   final Rx<ConnectivityResult> _connectionStatus = ConnectivityResult.none.obs;
 
   @override
@@ -19,8 +18,8 @@ class NetworkManager extends GetxController {
         _connectivity.onConnectivityChanged.listen(_updateConnectionStatus);
   }
 
-  Future<void> _updateConnectionStatus(ConnectivityResult result) async {
-    _connectionStatus.value = result;
+  Future<void> _updateConnectionStatus(List<ConnectivityResult> result) async {
+    _connectionStatus.value = result as ConnectivityResult;
     if (_connectionStatus.value == ConnectivityResult.none) {
       AppLoaders.noInternetSnackBar(title: 'No InterNet Connection');
     }
